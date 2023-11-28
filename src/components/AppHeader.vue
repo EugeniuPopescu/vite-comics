@@ -54,7 +54,6 @@ export default {
 </script>
 
 <template>
-
 <header class="bg-light">
     <div class="container">
         <div class="row">
@@ -72,7 +71,6 @@ export default {
 </header>
 
 </template>
-
 <style scoped>
 .logo {
     width: 5rem;

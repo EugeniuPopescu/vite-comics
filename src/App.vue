@@ -13,12 +13,15 @@ export default {
 </script>
 
 <template>
+	<!-- component AppHeader -->
 	<AppHeader />
 
 	<main>
+	<!-- component Content -->
 		<Content />
 	</main>
 
+	<!-- component AppFooter --> 
 	<AppFooter />
 </template>
 

@@ -1,6 +1,9 @@
 <script>
 export default {
     name: "Content",
+    mounted() {
+        console.log("Componente Content caricato");
+    }
 }
     
 </script>

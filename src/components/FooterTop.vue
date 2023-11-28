@@ -1,6 +1,6 @@
 <script>
 export default {
-    name: "AppHeader",
+    name: "FooterTop",
     data() {
         return {
             cards: [
@@ -36,12 +36,14 @@ export default {
 <template>
 <div class="footer-top text-light" >
     <div class="container d-flex justify-content-between align-items-center px-4">
+        <!-- card render -->
         <div 
         v-for="card in cards"
         class="my-4">
             <img :src="card.img" alt="">
             <a class="mx-2">{{ card.text.toLocaleUpperCase() }}</a>
         </div>
+
     </div>
 </div>
 </template>

@@ -1,6 +1,6 @@
 <script>
 export default {
-    name: "AppHeader",
+    name: "FooterMiddle",
     data() {
         return {
             comics: [
@@ -88,6 +88,9 @@ export default {
                 }
             ]
         }
+    },
+    mounted() {
+        console.log("Componente FooterMiddle caricato");
     }
 }
 </script>
