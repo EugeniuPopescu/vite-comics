@@ -14,6 +14,8 @@ export default {
 
 <template>
     <FooterTop />
+    <FooterMiddle />
+    <FooterBottom />
 </template>
 
 <style scoped>
