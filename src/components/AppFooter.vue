@@ -13,7 +13,7 @@ export default {
 </script>
 
 <template>
-  
+    <FooterTop />
 </template>
 
 <style scoped>
