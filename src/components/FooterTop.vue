@@ -42,7 +42,7 @@ export default {
         <!-- card render -->
         <div 
         v-for="card in cards"
-        class="my-4">
+        class="my-5">
             <img :src="card.img" alt="">
             <a class="mx-2">{{ card.text.toLocaleUpperCase() }}</a>
         </div>
