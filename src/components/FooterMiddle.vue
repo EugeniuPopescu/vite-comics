@@ -99,7 +99,7 @@ export default {
 <div class="footer-middle" >
     <div class="container">
         <div class="row">
-            <div class="col-5 d-flex justify-content-between">
+            <div class="col-4 d-flex justify-content-between py-5">
                 <!-- row 1 -->
                 <div>
                     <div>
@@ -142,8 +142,8 @@ export default {
             </div>
 
             <!-- DC img -->
-            <div class="col-7 d-flex justify-content-end">
-                <img src="/public/img/dc-logo-bg.png" alt="">
+            <div class="col-8 d-flex justify-content-end">
+                <div class="bgImg"></div>
             </div>
         </div>
     </div>
@@ -153,6 +153,13 @@ export default {
 <style scoped>
 .footer-middle {
     background-image: url(/public/img/footer-bg.jpg);
+}
+
+.bgImg {
+    width: 80%;
+    background-size: cover;
+    background-position: center;
+    background-image: url(/img/dc-logo-bg.png);
 }
 
 span {
