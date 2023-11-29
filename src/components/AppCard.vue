@@ -53,8 +53,8 @@ export default {
 }
 
 img {
-    width: 12rem;
-    height: 12rem;
+    width: 11rem;
+    height: 11rem;
 }
 
 a {
