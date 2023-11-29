@@ -42,7 +42,7 @@ export default {
 }
 
 a {
-    font-size: medium;
+    font-size: small;
     text-decoration: none;
     font-weight: bold;
     color: dimgray;
