@@ -64,6 +64,7 @@ export default {
 	<AppHeader :txtLinks="links" />
 
 	<main>
+        <!-- <font-awesome-icon icon="fa-solid fa-user-secret" /> -->
 	<!-- component Content -->
 		<Content />
 	</main>
