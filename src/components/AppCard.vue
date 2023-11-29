@@ -75,8 +75,9 @@ a {
 }
 
 .load:hover {
-    color: black;
+    color: #3776E2;
     background-color: white;
+    transition: 0.3s;
 }
 
 .series {
@@ -91,7 +92,8 @@ a {
 }
 
 .series:hover {
-    color: black;
+    color: #3776E2;
     background-color: white;
+    transition: 0.3s;
 }
 </style>
