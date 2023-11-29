@@ -1,34 +1,14 @@
 <script>
 export default {
     name: "FooterTop",
+    props: {
+        shopCards: Object
+    },
     data() {
         return {
-            cards: [
-                {
-                    img: "/img/buy-comics-digital-comics.png",
-                    text: "digital comics",
-                },
-                {
-                    img: "/img/buy-comics-merchandise.png",
-                    text: "dc merchandise",
-                },
-                {
-                    img: "/img/buy-comics-subscriptions.png",
-                    text: "subscription",
-                },
-                {
-                    img: "/img/buy-comics-shop-locator.png",
-                    text: "comic shop locator",
-                },
-                {
-                    img: "/img/buy-dc-power-visa.svg",
-                    text: "dc power visa",
-                },
-            ]
         }
     },
     methods() {
-        
     },
     mounted() {
         console.log("Componente FooterTop caricato");
@@ -41,7 +21,7 @@ export default {
     <div class="container d-flex justify-content-between align-items-center px-4">
         <!-- card render -->
         <div 
-        v-for="card in cards"
+        v-for="card in shopCards"
         class="my-5">
             <img :src="card.img" alt="">
             <a class="mx-2">{{ card.text.toLocaleUpperCase() }}</a>
