@@ -5,27 +5,30 @@ export default {
         return {
             cards: [
                 {
-                    img: "/public/img/buy-comics-digital-comics.png",
+                    img: "/img/buy-comics-digital-comics.png",
                     text: "digital comics",
                 },
                 {
-                    img: "/public/img/buy-comics-merchandise.png",
+                    img: "/img/buy-comics-merchandise.png",
                     text: "dc merchandise",
                 },
                 {
-                    img: "/public/img/buy-comics-subscriptions.png",
+                    img: "/img/buy-comics-subscriptions.png",
                     text: "subscription",
                 },
                 {
-                    img: "/public/img/buy-comics-shop-locator.png",
+                    img: "/img/buy-comics-shop-locator.png",
                     text: "comic shop locator",
                 },
                 {
-                    img: "/public/img/buy-dc-power-visa.svg",
+                    img: "/img/buy-dc-power-visa.svg",
                     text: "dc power visa",
                 },
             ]
         }
+    },
+    methods() {
+        
     },
     mounted() {
         console.log("Componente FooterTop caricato");

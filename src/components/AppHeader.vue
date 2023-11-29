@@ -59,7 +59,7 @@ export default {
         <div class="row">
             <!-- col logo -->
             <div class="col-4">
-                <img class="logo my-2" src="/public/img/dc-logo.png" alt="">
+                <img class="logo my-3" src="/public/img/dc-logo.png" alt="">
             </div>
 
             <!-- col links -->
@@ -80,6 +80,10 @@ a {
     text-decoration: none;
     font-weight: bolder;
     color: dimgray;
+}
+
+a::after {
+    border-bottom: 1px solid;
 }
 
 a:hover {
