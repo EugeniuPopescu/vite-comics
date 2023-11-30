@@ -2,7 +2,8 @@
 export default {
     name: "AppCard",
     props: {
-        dcCards: Object
+        image: String,
+        title: String,
     },
     data() {
         return {
@@ -18,43 +19,25 @@ export default {
 </script>
 
 <template>
-<div class="appCard text-light" >
-    <div class="container position-relative">
-        <!-- btn load more -->
-        <div class="pb-5">
-            <a class="series">CURRENT SERIES</a>
-        </div>
-        
 
-        <!-- card render -->
-        <div class="d-flex flex-wrap justify-content-between align-items-center">
-            <div 
-            v-for="card in dcCards"
-            class="dcCard d-flex flex-column my-4">
-                <img :src="card.thumb" alt="">
-                <a class="pt-2">{{ card.series.toLocaleUpperCase() }}</a>
-            </div>
+    <!-- card render -->
+    <div class="dcCard">
+        <div class=" d-flex flex-column my-4">
+            <img :src="image" alt="">
+            <a class="pt-2">{{ title.toUpperCase() }}</a>
         </div>
-
-        <!-- btn load more -->
-        <div class="d-flex justify-content-center py-5">
-            <div>
-                <a class="load">LOAD MORE</a>
-            </div>
-        </div>
-    
     </div>
-</div>
+
 </template>
 
 <style scoped>
-.appCard {
-    background-color: #1C1C1C;;
+.dcCard {
+    width: calc(100% / 6);
 }
 
 img {
-    width: 11rem;
-    height: 11rem;
+    width: 12rem;
+    height: 15rem;
 }
 
 a {
@@ -62,38 +45,5 @@ a {
     font-weight: 500;
     text-decoration: none;
     color: lightgray;
-}
-
-.dcCard {
-    width: 15%;
-}
-
-.load {
-    padding: 1rem 4rem;
-    background-color: #3776E2;
-    font-weight: bold;
-}
-
-.load:hover {
-    color: #3776E2;
-    background-color: white;
-    transition: 0.3s;
-}
-
-.series {
-    padding: 1rem 2rem;
-    background-color: #3776E2;
-    font-weight: 600;
-    font-size: x-large;
-
-    position: absolute;
-    top: -2rem;
-    left: -1rem;
-}
-
-.series:hover {
-    color: #3776E2;
-    background-color: white;
-    transition: 0.3s;
 }
 </style>
