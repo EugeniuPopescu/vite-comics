@@ -19,17 +19,19 @@ export default {
 </script>
 
 <template>
-<header class="bg-light">
-    <div class="container">
-        <div class="row">
-            <!-- col logo -->
-            <div class="col-5">
-                <img class="logo my-3" src="/public/img/dc-logo.png" alt="">
-            </div>
-
-            <!-- col links -->
-            <div class="col-7 d-flex justify-content-between align-items-center">
-                <a v-for="link in txtLinks" :href="link.url">{{ link.text.toLocaleUpperCase() }}</a>
+    <header class="bg">
+    <div class="">
+        <div class="container">
+            <div class="row">
+                <!-- col logo -->
+                <div class="col-5">
+                    <img class="logo my-3" src="/public/img/dc-logo.png" alt="">
+                </div>
+    
+                <!-- col links -->
+                <div class="col-7 d-flex justify-content-between align-items-center">
+                    <a v-for="link in txtLinks" :href="link.url">{{ link.text.toLocaleUpperCase() }}</a>
+                </div>
             </div>
         </div>
     </div>
@@ -54,5 +56,11 @@ a::after {
 
 a:hover {
     color: #3980F1;
+}
+
+.bg {
+    background-image: url(/assets/banner-bg.png) no-repeat bottom center;
+    background-size: cover;
+    position: relative;
 }
 </style>
